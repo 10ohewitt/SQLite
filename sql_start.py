@@ -32,11 +32,11 @@ create_table_statement = """CREATE TABLE IF NOT EXISTS Review_Table (
 c.execute(create_table_statement)
 
 insert_statement = """INSERT INTO Movie_Table (movie_title, movie_release_date, movie_genre) 
-VALUES ("Blue Beetle", "18/08/2023", "Science Fiction")"""
+VALUES ("Blue Beetle", "18/8/2023", "Science Fiction")"""
 c.execute(insert_statement)
 
 insert_statement = """INSERT INTO Movie_Table (movie_title, movie_release_date, movie_genre) 
-VALUES ("Batman", "04/04/2022", "Science Fiction")"""
+VALUES ("Batman", "4/4/2022", "Science Fiction")"""
 c.execute(insert_statement)
 
 insert_statement = """INSERT INTO Movie_Table (movie_title, movie_release_date, movie_genre) 
@@ -45,6 +45,10 @@ c.execute(insert_statement)
 
 insert_statement = """INSERT INTO Movie_Table (movie_title, movie_release_date, movie_genre) 
 VALUES ("Exorcist", "26/12/1973", "Horror")"""
+c.execute(insert_statement)
+
+insert_statement = """INSERT INTO Movie_Table (movie_title, movie_release_date, movie_genre) 
+VALUES ("Brokeback Mountain", "6/1/2006", "Romance")"""
 c.execute(insert_statement)
 
 password = bytes("root", "UTF-8")
